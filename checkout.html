@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainy Days | Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Info bar -->
+  <div class="info-bar">
+    <div class="wrap">
+      <span>Free shipping for orders over $99</span>
+      <span>Delivery 4–9 business days</span>
+      <span>30-day return policy</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+        <nav class="nav">
+            <!-- Logo -->
+            <a class="logo" href="index.html">
+              <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo">
+            </a>
+          
+            <!-- Search bar -->
+            <div class="search" role="search">
+              <label class="sr-only" for="q">Search</label>
+              <input id="q" type="search" placeholder="Search for products, categories or brands">
+              <button aria-label="Search">
+                <img src="images/search_icon.png" alt="Search icon" class="icon">
+              </button>
+            </div>
+          
+            <!-- Nav links  -->
+            <div class="links">
+              <a href="index.html">Home</a>
+              <a href="product.html">Shop</a>
+              <a href="comingsoon.html">Contact</a>
+              <a href="comingsoon.html">About us</a>
+              <a href="cart.html" class="icon-btn" aria-label="Cart">
+                <img src="images/shopping-cart.png" alt="Shopping cart" class="icon">
+              </a>
+            </div>
+          </nav>
+
+
+          <main class="section checkout" aria-labelledby="checkout-title">
+            <h1 id="checkout-title" class="checkout-title">CHECKOUT</h1>
+        
+            <div class="checkout-grid">
+              <!-- LEFT: Shipping & Payment form -->
+              <section class="checkout-form">
+                <h2>Shipping address</h2>
+        
+                <form class="form" action="#" method="post" novalidate>
+                  <div class="form-row">
+                    <input type="text" name="fullname" placeholder="Full name" required>
+                  </div>
+        
+                  <div class="form-row">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                  </div>
+        
+                  <div class="form-row grid-2">
+                    <input type="text" name="address" placeholder="Address" required>
+                    <input type="text" name="nr" placeholder="Nr">
+                  </div>
+        
+                  <div class="form-row grid-3">
+                    <input type="text" name="zip" placeholder="ZIP" required>
+                    <input type="text" name="city" placeholder="City" required>
+
+                  </div>
+        
+                  <div class="form-row checkbox-row">
+                    <label><input type="checkbox" name="create_account"> Create an account</label>
+                  </div>
+        
+                  <!-- Payment -->
+                  <h2>Payment method</h2>
+                  <p class="muted small">Choose a payment method</p>
+        
+                  <div class="payment-methods" role="radiogroup" aria-label="Payment method">
+                    <label class="payment">
+                      <input type="radio" name="payment" value="card" checked>
+                      <img src="images/credit-card.png" alt="Card">
+                      <div class="pm-label">Card</div>
+                    </label>
+        
+                    <label class="payment">
+                      <input type="radio" name="payment" value="invoice">
+                      <img src="images/credit-card.png" alt="Invoice">
+                      <div class="pm-label">Invoice</div>
+                    </label>
+        
+                    <label class="payment">
+                      <input type="radio" name="payment" value="vipps">
+                      <img src="images/credit-card.png" alt="Vipps">
+                      <div class="pm-label">Vipps</div>
+                    </label>
+                  </div>
+        
+                  <!-- Card fields (static) -->
+                  <div class="form-row">
+                    <input type="text" name="cardname" placeholder="Name on card">
+                  </div>
+        
+                  <div class="form-row">
+                    <input type="text" name="cardnumber" placeholder="Card number">
+                  </div>
+        
+                  <div class="form-row grid-3">
+                    <input type="text" name="expiry" placeholder="MM/YY">
+                    <input type="text" name="cvc" placeholder="CSV">
+                    <div></div>
+                  </div>
+        
+                  <div class="form-row checkbox-row">
+                    <label><input type="checkbox" name="terms" required> I accept terms and conditions</label>
+                  </div>
+        
+                  <div class="form-row checkbox-row">
+                    <label><input type="checkbox" name="newsletter"> I would like to receive newsletter</label>
+                  </div>
+        
+                  <!-- Pay button -->
+                  <div class="form-row">
+                    <button class="btn primary pay-btn" type="submit">Pay</button>
+                  </div>
+                </form>
+              </section>
+        
+              <!-- RIGHT: Order summary -->
+              <aside class="checkout-summary" aria-labelledby="summary-heading">
+                <h3 id="summary-heading">Cart</h3>
+        
+                <div class="summary-item product-row">
+                  <img class="summary-thumb" src="images/RainyDays_Jacket_1.jpg" alt="Explorer's Jacket thumbnail">
+                  <div class="summary-meta">
+                    <div class="summary-name">Explorer's Jacket</div>
+                    <div class="summary-qty">1 × $99.00</div>
+                  </div>
+                </div>
+        
+                <hr class="divider">
+        
+                <div class="summary-totals">
+                  <div class="line"><div>Subtotal:</div><div class="right">$99.00</div></div>
+                  <div class="line"><div>Shipping:</div><div class="right">$0.00</div></div>
+                </div>
+        
+                <hr class="divider">
+        
+                <div class="total-row">
+                  <div class="total-label">Total:</div>
+                  <div class="total-amount">$99.00</div>
+                </div>
+        
+                <div class="summary-cta">
+                  <a class="btn ghost" href="cart.html">← Back to cart</a>
+                </div>
+              </aside>
+            </div>
+          </main>
+
+          <footer>
+            <div class="footer-wrap">
+              
+              <!-- Logo -->
+              <div class="brand">
+                <img src="images/RainyDays_Logo.png" alt="Rainy Days Logo">
+              </div>
+          
+              <!-- Help links -->
+              <div class="help">
+                <div>
+                  <p><strong>HELP</strong></p>
+                  <a href="comingsoon.html">FAQ</a><br>
+                  <a href="comingsoon.html">About us</a><br>
+                  <a href="comingsoon.html">Cookies</a>
+                </div>
+                <div>
+                  <a href="comingsoon.html">Return policy</a><br>
+                  <a href="comingsoon.html">Privacy policy</a>
+                </div>
+              </div>
+          
+              <!-- Contact -->
+              <div class="contact">
+                <h3>Contact us</h3>
+                <a href="comingsoon.html" class="btn">Contact us</a>
+              </div>
+          
+              <!-- Social icons -->
+              <div class="social">
+                <a href="comingsoon.html" aria-label="LinkedIn"><img src="images/social.media.png" alt="LinkedIn, Instagram, Facebook, Snapchat"></a>
+              </div>
+          
+            </div>
+          </footer>   
