@@ -663,6 +663,9 @@ footer {
 .form { width:70%; }
 .form-row { margin-bottom: 0.85rem; }
 
+.section h2 {
+    text-align: left;
+}
 /* Input styles */
 .form input[type="text"],
 .form input[type="email"],
