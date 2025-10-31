@@ -785,9 +785,10 @@ footer {
     .success-sub     { font-size: 1.1rem; }
   }
   
-  /* ===== Coming Soon page ===== */
+/* ===== Coming Soon page ===== */
+
 .comingsoon-page {
-    min-height: 60vh;
+    min-height: 70vh;
     display: grid;
     place-items: center;
     padding: 3rem 1rem;
@@ -796,7 +797,7 @@ footer {
   .comingsoon-wrap {
     text-align: center;
     max-width: 600px;
-    margin-top: -50rem
+    margin-top: 0; /* fjernet negativ margin */
   }
   
   .comingsoon-heading {
@@ -823,3 +824,4 @@ footer {
     .comingsoon-heading { font-size: 2rem; }
     .comingsoon-sub { font-size: 1rem; }
   }
+  
